@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EU-Ethiopia Partnership | EU–AU Educational Resource</title>
+<style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2563eb;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #2c5aa0;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content {
+            padding: 3rem 0;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section h2 {
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        
+        .ethiopia-overview {
+            background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
+            color: white;
+            padding: 3rem 0;
+            margin: 2rem 0;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .ethiopia-overview h2 {
+            color: white;
+            border: none;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .ethiopia-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .ethiopia-stat {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .ethiopia-stat h3 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .pillar-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-left: 4px solid #DC2626;
+        }
+        
+        .pillar-card h3 {
+            color: #DC2626;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .flagship-projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .flagship-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+            border-top: 4px solid #DC2626;
+            transition: transform 0.3s;
+        }
+        
+        .flagship-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .flagship-card h3 {
+            color: #DC2626;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .flagship-card .investment {
+            background: #FEF2F2;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            border-left: 3px solid #DC2626;
+        }
+        
+        .flagship-card .investment strong {
+            color: #DC2626;
+        }
+        
+        .recent-projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .project-card {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #DC2626;
+        }
+        
+        .project-card h4 {
+            color: #DC2626;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-card .date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #2c5aa0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .external-link {
+            color: #DC2626;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .external-link:hover {
+            text-decoration: underline;
+        }
+        
+        .campaign-highlight {
+            background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .campaign-highlight h3 {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav class="container">
+<a class="logo" href="index.html">🌍 EU·AU Portal</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="eu-overview.html">European Union</a></li>
+<li><a href="au-overview.html">African Union</a></li>
+<li><a href="partnership.html">Partnership</a></li>
+<li><a href="eu-ethiopia.html">EU-Ethiopia</a></li>
+<li><a href="ai-resources.html">AI Resources</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+<section class="hero">
+<div class="container">
+<h1>🇪🇺🇪🇹 EU-Ethiopia Partnership</h1>
+<p>Global Gateway initiatives connecting Ethiopia to a future of opportunity and prosperity through sustainable development and digital transformation</p>
+</div>
+</section>
+<main class="content">
+<div class="container">
+<a class="back-link" href="index.html">← Back to Home</a>
+<div class="section">
+<h2>Partnership Overview</h2>
+<p>Ethiopia is devoted to achieving the Sustainable Development Goals and reaching middle-income status by 2030 through a climate-resilient, low-carbon development path. Through the Global Gateway initiative, Team Europe provides Ethiopia with a fair, transparent, and advantageous partnership to enhance the regulatory and investment climate, elevate infrastructure development, and connect Ethiopia to a future of opportunities and prosperity.</p>
+<div class="ethiopia-overview">
+<h2>🌍 Global Gateway in Ethiopia</h2>
+<p>Moving towards an open and connected economy through transformative investments in sustainable infrastructure, digital transformation, and clean energy transition.</p>
+<div class="ethiopia-stats">
+<div class="ethiopia-stat">
+<h3>€300B</h3>
+<p>Global Gateway Investment (2021-2027)</p>
+</div>
+<div class="ethiopia-stat">
+<h3>€270M</h3>
+<p>RISED Ethiopia Investment</p>
+</div>
+<div class="ethiopia-stat">
+<h3>80%</h3>
+<p>Population Dependent on Agriculture</p>
+</div>
+<div class="ethiopia-stat">
+<h3>2030</h3>
+<p>Middle-Income Status Goal</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section">
+<h2>Ethiopia's Development Vision</h2>
+<p>Central to Ethiopia's transformation is the <strong>Home-Grown Economic Reform Programme 2.0</strong>, which aims to:</p>
+<ul>
+<li><strong>Ensure macroeconomic stability</strong> and sustainable fiscal management</li>
+<li><strong>Improve the business climate</strong> for domestic and international investment</li>
+<li><strong>Boost competitiveness</strong> across key economic sectors</li>
+<li><strong>Enhance public sector efficiency and transparency</strong></li>
+<li><strong>Transition from public sector-driven to private sector-led economy</strong></li>
+<li><strong>Reduce debt burdens</strong> while raising infrastructure standards</li>
+<li><strong>Create jobs and business opportunities</strong> for inclusive growth</li>
+</ul>
+</div>
+<div class="section">
+<h2>Four Investment Pillars</h2>
+<p>Global Gateway focuses on four strategic pillars to accelerate Ethiopia's sustainable development:</p>
+<div class="pillars-grid">
+<div class="pillar-card">
+<h3>💻 Human-Centric Digital Transformation</h3>
+<h4>A Competitive, Open and Inclusive Digital Economy</h4>
+<p>Global Gateway invests in infrastructure, businesses, institutions and people to accelerate Ethiopia's digital transformation. This includes:</p>
+<ul>
+<li><strong>Digital infrastructure development</strong> for nationwide connectivity</li>
+<li><strong>DESTA programme</strong> - Advancing Market-Ready Digital Skills</li>
+<li><strong>TVET system enhancement</strong> to power Ethiopia's growing digital economy</li>
+<li><strong>E-mobility and digital services</strong> integration</li>
+<li><strong>Digital connectivity extension</strong> across rural and urban areas</li>
+</ul>
+<p><strong>Goal:</strong> Equip Ethiopians with market-relevant digital and business skills while building robust digital infrastructure.</p>
+</div>
+<div class="pillar-card">
+<h3>⚡ Clean Energy Transition for All</h3>
+<h4>Clean Energy, Empowered Ethiopia</h4>
+<p>Global Gateway supports investments and rules paving the way to a clean energy transition for all in Ethiopia. Key initiatives include:</p>
+<ul>
+<li><strong>Grid modernization and digitalization</strong> for enhanced reliability</li>
+<li><strong>Renewable energy development</strong> - wind, solar, and hydropower</li>
+<li><strong>Regional energy hub development</strong> for cross-border energy trade</li>
+<li><strong>Clean cooking solutions</strong> and organic fertilizer access</li>
+<li><strong>Off-grid renewable energy</strong> for rural communities</li>
+</ul>
+<p><strong>Goal:</strong> Ensure clean, modern and affordable energy access for all Ethiopians while becoming a regional renewable energy hub.</p>
+</div>
+<div class="pillar-card">
+<h3>🌾 Sustainable Agri-Food Value Chains</h3>
+<h4>Harvesting Global Markets, Nurturing Local Futures</h4>
+<p>Global Gateway invests in the coffee and horticulture value chains, connecting Ethiopia to the EU market and boosting opportunities for smallholder farmers:</p>
+<ul>
+<li><strong>Cold storage infrastructure</strong> for perishable goods</li>
+<li><strong>Supply chain competitiveness</strong> enhancement</li>
+<li><strong>Export sector development</strong> for fruits and vegetables</li>
+<li><strong>Smallholder farmer support</strong> especially women and youth</li>
+<li><strong>Agro-processing and value addition</strong> capabilities</li>
+</ul>
+<p><strong>Goal:</strong> Transform agriculture from subsistence to commercial, export-oriented production while ensuring food security.</p>
+</div>
+<div class="pillar-card">
+<h3>🏥 Health System Strengthening</h3>
+<h4>Stronger Healthcare, Thriving Communities</h4>
+<p>Global Gateway strengthens healthcare capacities and invests in Ethiopia's health system through:</p>
+<ul>
+<li><strong>Hospital rehabilitation and modernization</strong></li>
+<li><strong>Health facility electrification</strong> in rural areas</li>
+<li><strong>Medical equipment and technology</strong> upgrades</li>
+<li><strong>Healthcare workforce development</strong></li>
+<li><strong>Referral and teaching hospital</strong> capacity building</li>
+</ul>
+<p><strong>Goal:</strong> Build a resilient healthcare system serving over 10 million people with quality medical services.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<h2>Global Gateway Flagship Projects</h2>
+<p>Transformative investments showcasing how Team Europe implements Global Gateway in Ethiopia:</p>
+<div class="flagship-projects">
+<div class="flagship-card">
+<h3>⚡ RISED Ethiopia</h3>
+<h4>Clean Energy Transition for All &amp; Human-Centric Digital Transformation</h4>
+<p>From ensuring clean, modern and affordable energy access for all Ethiopians to powering e-mobility and digital infrastructure and selling decarbonised energy to neighbouring countries, the future of Ethiopia is electric!</p>
+<div class="investment">
+<strong>Investment:</strong> EUR 270 million mobilized by Team Europe
+                        </div>
+<h4>Key Components:</h4>
+<ul>
+<li><strong>Electricity transmission network</strong> rehabilitation and modernization</li>
+<li><strong>Grid digitalization</strong> for smart energy management</li>
+<li><strong>Ashegoda 120MW wind farm</strong> restoration</li>
+<li><strong>Digital connectivity extension</strong> nationwide</li>
+<li><strong>Ethiopian energy professionals</strong> capacity strengthening</li>
+</ul>
+<p><strong>Partnership:</strong> Ethiopian Electric Power and Team Europe collaboration</p>
+<p><strong>Impact:</strong> Making the power grid stronger, smarter and greener while supporting the twin green and digital transition.</p>
+</div>
+<div class="flagship-card">
+<h3>🌪️ Assela Wind Farm</h3>
+<h4>Clean Energy Transition for All</h4>
+<p>Ethiopia is rich in renewable energy resources. The Assela 100MW wind farm demonstrates Global Gateway in action, leveraging finance and expertise from Team Europe partners to build smart, clean and secure energy connections.</p>
+<div class="investment">
+<strong>Capacity:</strong> 100MW wind power generation<br/>
+<strong>Financed by:</strong> Denmark<br/>
+<strong>Developer:</strong> Siemens Energy (European company)
+                        </div>
+<h4>Strategic Benefits:</h4>
+<ul>
+<li><strong>Grid resilience enhancement</strong> - reducing dependence on hydropower</li>
+<li><strong>Climate change adaptation</strong> - diversifying energy sources</li>
+<li><strong>Regional energy hub development</strong> - positioning Ethiopia as renewable energy leader</li>
+<li><strong>First power delivery</strong> - turbines already feeding into national grid</li>
+</ul>
+<p><strong>Milestone:</strong> First turbines started feeding power into Ethiopia's national grid in 2025.</p>
+</div>
+<div class="flagship-card">
+<h3>🚛 Cool Port Addis</h3>
+<h4>Sustainable Agri-Food Value Chains</h4>
+<p>Agriculture is the backbone of the Ethiopian economy with 80% of the population depending on it. Cool Port Addis enhances supply chain competitiveness and spurs large-scale fruit and vegetable export sector growth.</p>
+<div class="investment">
+<strong>Developer:</strong> Dutch Flying Swans<br/>
+<strong>Co-financed by:</strong> Netherlands and Government of Ethiopia<br/>
+<strong>Location:</strong> Modjo Dry Port
+                        </div>
+<h4>Project Features:</h4>
+<ul>
+<li><strong>Cold storage facility</strong> for perishable goods</li>
+<li><strong>Addis-Djibouti railway connection</strong> for efficient transport</li>
+<li><strong>Expressway connectivity</strong> for road transport</li>
+<li><strong>Export sector development</strong> for fruits and vegetables</li>
+<li><strong>Smallholder farmer opportunities</strong> especially for women and youth</li>
+</ul>
+<p><strong>Impact:</strong> Creating significant income opportunities for smallholder farmers while contributing to food security and export diversification.</p>
+</div>
+</div>
+</div>
+<div class="campaign-highlight">
+<h3>🔋 #StepUp Campaign: Powering Everyday Lives - ዱብ ዱብ ለነገ!</h3>
+<p>Energy access is central to Ethiopia's path towards inclusive growth and sustainable development. The #StepUp campaign illustrates how energy innovations at the community level, such as solar power and electric kitchenware, can transform livelihoods, empower entrepreneurs, and reduce environmental impact.</p>
+<p><strong>Featured Stories:</strong> Dawit (barber) and Yeshi (injera baker) showcase how clean energy transforms small businesses and communities.</p>
+</div>
+<div class="section">
+<h2>Recent Project Developments (2025)</h2>
+<div class="recent-projects">
+<div class="project-card">
+<div class="date">September 3, 2025</div>
+<h4>National Biogas Programme Ethiopia (NBPE+)</h4>
+<p>EU co-funded third phase promoting access to clean cooking and organic fertiliser in rural Ethiopia, partnering with Government of Ethiopia, local communities and private sector.</p>
+</div>
+<div class="project-card">
+<div class="date">June 27, 2025</div>
+<h4>Assela Wind Farm Achievement</h4>
+<p>Team Europe member Denmark's investment showcases Global Gateway in action, turning renewable energy potential into sustainable development with first power delivery to national grid.</p>
+</div>
+<div class="project-card">
+<div class="date">June 20, 2025</div>
+<h4>DESTA Programme Launch</h4>
+<p>EU equips Ethiopians with market-relevant digital and business skills, boosting the TVET system to power Ethiopia's growing digital economy.</p>
+</div>
+<div class="project-card">
+<div class="date">May 22, 2025</div>
+<h4>Dessie Hospital Rehabilitation</h4>
+<p>EU supported restoration of vital referral and teaching facility serving over 10 million people after extensive damage during northern conflict.</p>
+</div>
+<div class="project-card">
+<div class="date">April 9, 2025</div>
+<h4>EnDev Rural Energy Expansion</h4>
+<p>EU co-funded project installed five solar mini-grids, electrified over 100 health facilities, and boosted local markets for clean energy and cookstoves.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<h2>Partnership Impact</h2>
+<p>The EU-Ethiopia Global Gateway partnership delivers transformative results:</p>
+<ul>
+<li><strong>Economic Transformation:</strong> Supporting transition to private sector-led economy</li>
+<li><strong>Energy Security:</strong> Building resilient, diversified energy infrastructure</li>
+<li><strong>Digital Inclusion:</strong> Connecting rural and urban communities to digital opportunities</li>
+<li><strong>Agricultural Modernization:</strong> Enhancing productivity and market access for farmers</li>
+<li><strong>Healthcare Strengthening:</strong> Improving access to quality medical services</li>
+<li><strong>Skills Development:</strong> Preparing workforce for digital economy</li>
+<li><strong>Regional Integration:</strong> Positioning Ethiopia as regional hub for energy and trade</li>
+</ul>
+</div>
+<div class="section">
+<h2>Future Outlook</h2>
+<p>The EU-Ethiopia partnership through Global Gateway continues to evolve with focus on:</p>
+<ul>
+<li><strong>Scaling renewable energy</strong> infrastructure and regional energy trade</li>
+<li><strong>Expanding digital connectivity</strong> and e-government services</li>
+<li><strong>Strengthening agri-food value chains</strong> for export competitiveness</li>
+<li><strong>Building climate resilience</strong> across all sectors</li>
+<li><strong>Enhancing private sector participation</strong> in development initiatives</li>
+<li><strong>Supporting Ethiopia's 2030 middle-income status goal</strong></li>
+</ul>
+<p style="margin-top: 2rem;">
+<strong>Learn More:</strong>
+<a class="external-link" href="https://www.eeas.europa.eu/delegations/ethiopia/global-gateway_en?s=98" target="_blank">
+                        Official EU Delegation Ethiopia - Global Gateway →
+                    </a>
+</p>
+</div>
+</div>
+</main>
+</body>
+</html>

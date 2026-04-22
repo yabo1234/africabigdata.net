@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EU-AU Partnership | EU–AU Educational Resource</title>
+<style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c5aa0;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #2c5aa0;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content {
+            padding: 3rem 0;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section h2 {
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        
+        .global-gateway-hero {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            color: white;
+            padding: 3rem 0;
+            margin: 2rem 0;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .global-gateway-hero h2 {
+            color: white;
+            border: none;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .gateway-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .gateway-stat {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .gateway-stat h3 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .gateway-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .gateway-area {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-left: 4px solid #059669;
+        }
+        
+        .gateway-area h3 {
+            color: #059669;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .gateway-area .ambition {
+            background: #f0fdf4;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            border-left: 3px solid #059669;
+        }
+        
+        .gateway-area .ambition strong {
+            color: #059669;
+        }
+        
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .pillar-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #059669;
+        }
+        
+        .pillar-card h3 {
+            color: #059669;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #2c5aa0;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: #2c5aa0;
+            border-radius: 50%;
+        }
+        
+        .timeline-item h4 {
+            color: #2c5aa0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #2c5aa0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .stats-highlight {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .stat-item h4 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .external-link {
+            color: #059669;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .external-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav class="container">
+<a class="logo" href="index.html">EU·AU Portal</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="eu-overview.html">European Union</a></li>
+<li><a href="au-overview.html">African Union</a></li>
+<li><a href="partnership.html">Partnership</a></li>
+<li><a href="eu-ethiopia.html">EU-Ethiopia</a></li>
+<li><a href="ai-resources.html">AI Resources</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+<section class="hero">
+<div class="container">
+<h1>🤝 EU-AU Partnership</h1>
+<p>The history, milestones, and strategic framework of cooperation between the European Union and African Union</p>
+</div>
+</section>
+<main class="content">
+<div class="container">
+<a class="back-link" href="index.html">← Back to Home</a>
+<div class="section">
+<h2>Partnership Overview</h2>
+<p>The partnership between the European Union and the African Union represents one of the world's most significant inter-continental relationships. Built on shared values of democracy, human rights, and sustainable development, this partnership addresses global challenges through coordinated action across multiple domains.</p>
+<div class="stats-highlight">
+<h3>Partnership by Numbers</h3>
+<div class="stats-grid">
+<div class="stat-item">
+<h4>82</h4>
+<p>Total Countries</p>
+</div>
+<div class="stat-item">
+<h4>1.8B</h4>
+<p>Combined Population</p>
+</div>
+<div class="stat-item">
+<h4>€320B</h4>
+<p>Annual Trade Volume</p>
+</div>
+<div class="stat-item">
+<h4>6</h4>
+<p>Strategic Pillars</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="global-gateway">
+<div class="global-gateway-hero">
+<h2>🌍 EU-Africa Global Gateway Investment Package</h2>
+<p>The Global Gateway Africa-Europe Investment Package aims to support Africa for a strong, inclusive, green and digital recovery and transformation through unprecedented investment and partnership.</p>
+<div class="gateway-overview">
+<div class="gateway-stat">
+<h3>€150B</h3>
+<p>Total Investment Package</p>
+</div>
+<div class="gateway-stat">
+<h3>300GW</h3>
+<p>Additional Renewable Energy by 2030</p>
+</div>
+<div class="gateway-stat">
+<h3>65M</h3>
+<p>People's Livelihoods Improved</p>
+</div>
+<div class="gateway-stat">
+<h3>40GW</h3>
+<p>Electrolyser Capacity by 2030</p>
+</div>
+</div>
+</div>
+<h3>Five Key Transformation Areas</h3>
+<p>The Global Gateway focuses on five strategic areas to accelerate Africa's sustainable transformation:</p>
+<div class="gateway-areas">
+<div class="gateway-area">
+<h3>🌱 Accelerating the Green Transition</h3>
+<p>To tackle the global challenge of climate change, the EU works with Africa to maximise the benefits of a job-rich green transition and minimise threats to the environment in full compliance with the Paris Agreement.</p>
+<h4>Key Focus Areas:</h4>
+<ul>
+<li><strong>Sustainable Energy:</strong> Increase renewable energy and hydrogen share in the energy mix</li>
+<li><strong>Biodiversity:</strong> Sustainable use of natural resources and nature-based solutions</li>
+<li><strong>Agri-food Systems:</strong> More sustainable African agri-food systems</li>
+<li><strong>Climate Resilience:</strong> Disaster risk reduction and climate adaptation</li>
+</ul>
+<div class="ambition">
+<strong>2030 Ambition:</strong> Increase renewable energy generation capacity by at least an additional 300 GW, improve livelihood of 65 million people, and stabilise 3 million km² of land.
+                        </div>
+<h4>Spotlight: Clean Hydrogen Production</h4>
+<p>Massive deployment of renewable energy and clean hydrogen production across Africa would contribute to at least 40 Gigawatts of electrolyser capacity by 2030, unlocking business opportunities in energy intensive industries.</p>
+</div>
+<div class="gateway-area">
+<h3>💻 Accelerating the Digital Transition</h3>
+<p>Tackling the global digital divide and strengthening secure digital connections between Europe and Africa, and across Africa, is a common priority enhanced by the post-COVID-19 digital imperative.</p>
+<h4>Key Initiatives:</h4>
+<ul>
+<li><strong>Digital Infrastructure:</strong> Submarine and terrestrial fibre-optic cables</li>
+<li><strong>Cloud &amp; Data:</strong> Cloud and data infrastructures development</li>
+<li><strong>Regulatory Frameworks:</strong> Supporting digital transition governance</li>
+<li><strong>AU-EU Digital4Development Hub:</strong> Coordinated digital development</li>
+</ul>
+<div class="ambition">
+<strong>2030 Ambition:</strong> Accelerate universal access for all in Africa to reliable internet networks safely and securely wherever they live.
+                        </div>
+<h4>Spotlight: Major Cable Projects</h4>
+<ul>
+<li><strong>Medusa Flagship:</strong> Underwater cabling connecting Northern Africa to EU</li>
+<li><strong>Africa 1 Cable:</strong> Linking Europe to the entire East coast of Africa</li>
+<li><strong>West Africa Extension:</strong> First landing planned in Dakar, Senegal</li>
+</ul>
+</div>
+<div class="gateway-area">
+<h3>📈 Accelerating Sustainable Growth and Job Creation</h3>
+<p>Substantially increasing investments to boost regional and continental economic integration, growth and decent job creation across multiple sectors.</p>
+<h4>Key Areas:</h4>
+<ul>
+<li><strong>Transport:</strong> Strategic corridors and multimodal transport networks</li>
+<li><strong>Business Support:</strong> Early-stage businesses and young entrepreneurs</li>
+<li><strong>Economic Integration:</strong> Supporting AfCFTA implementation</li>
+<li><strong>Raw Materials:</strong> Sustainable mineral value chains</li>
+<li><strong>Science &amp; Innovation:</strong> Africa-EU Science, Technology and Innovation Initiative</li>
+</ul>
+<div class="ambition">
+<strong>2030 Ambition:</strong> Integrate African and European multimodal transport networks, increase private sector contribution to Africa's growth, and strengthen continental economic integration.
+                        </div>
+<h4>AfCFTA Support</h4>
+<p>Additional €630 million announced to support AfCFTA operationalisation, including €24.2 million Technical Assistance Facility co-funded by France, Germany and Sweden.</p>
+</div>
+<div class="gateway-area">
+<h3>🏥 Strengthening Health and Pharmaceutical Systems</h3>
+<p>Building resilient health systems and supporting successful vaccination campaigns to mitigate COVID-19 effects and provide better healthcare for the future.</p>
+<h4>Focus Areas:</h4>
+<ul>
+<li><strong>Vaccine Infrastructure:</strong> Deployment, infrastructure and production capacities</li>
+<li><strong>Skills Development:</strong> Healthcare workforce strengthening</li>
+<li><strong>Regulatory Frameworks:</strong> Pharmaceutical system governance</li>
+<li><strong>Universal Health Coverage:</strong> Accessible healthcare systems</li>
+</ul>
+<div class="ambition">
+<strong>2030 Ambition:</strong> Improved vaccination coverage and strengthened African pharmaceutical system with regional manufacturing capacities to meet local needs and demand.
+                        </div>
+<h4>Manufacturing and Access Initiative</h4>
+<p>Team Europe initiative supporting African partners in strengthening local pharmaceutical systems, including support for the African Medicines Agency (AMA) and WHO technology transfer hub.</p>
+</div>
+<div class="gateway-area">
+<h3>🎓 Investing in Education and Training</h3>
+<p>Supporting African partners in providing modern, quality education and training for all children and youth, addressing the unprecedented learning disruption caused by COVID-19.</p>
+<h4>Key Components:</h4>
+<ul>
+<li><strong>Quality Education:</strong> Modern education systems for all children and youth</li>
+<li><strong>Skills Training:</strong> Training corresponding to labour market opportunities</li>
+<li><strong>Youth Mobility:</strong> Facilitating educational exchange</li>
+<li><strong>Teacher Development:</strong> Enhancing teachers' competences and skills</li>
+</ul>
+<div class="ambition">
+<strong>2030 Ambition:</strong> Expanded skills development opportunities to meet emerging needs for Africa's economic and social transformation.
+                        </div>
+<h4>Youth Mobility for Africa</h4>
+<p>Flagship initiative promoting learning mobility opportunities within Africa and between Africa and the EU, supporting cooperation in higher education and promoting Africa as a study destination.</p>
+</div>
+</div>
+<h3>Financing the Global Gateway</h3>
+<p>The €150 billion investment package combines multiple financing mechanisms:</p>
+<div class="gateway-areas">
+<div class="gateway-area">
+<h3>💰 Grants and Loans</h3>
+<p>EU and Member States' bilateral aid, combining grants and loans while attracting private funding from both Africa and Europe through blended finance and guarantees.</p>
+</div>
+<div class="gateway-area">
+<h3>🌱 Global Green Bond Initiative</h3>
+<p>Supporting partner countries in developing and scaling up green bond markets to attract greater financing from international capital markets and institutional investors.</p>
+</div>
+<div class="gateway-area">
+<h3>🏦 Special Drawing Rights</h3>
+<p>€100 million grant agreement for IMF's Poverty Reduction and Growth Trust, enabling €630 million worth of zero interest loans for eligible African countries.</p>
+</div>
+</div>
+<p style="margin-top: 2rem;">
+<strong>Learn More:</strong>
+<a class="external-link" href="https://international-partnerships.ec.europa.eu/policies/global-gateway/initiatives-sub-saharan-africa/eu-africa-global-gateway-investment-package_en" target="_blank">
+                        Official EU-Africa Global Gateway Investment Package →
+                    </a>
+</p>
+</div>
+<div class="section">
+<h2>Six Pillars of Partnership</h2>
+<p>The EU–AU relationship is built on six strategic domains that define a shared vision for the 21st century:</p>
+<div class="pillars-grid">
+<div class="pillar-card">
+<h3>🌱 Green Transition</h3>
+<p><strong>Focus Areas:</strong></p>
+<ul>
+<li>Renewable energy development and technology transfer</li>
+<li>Climate adaptation and resilience building</li>
+<li>Sustainable agriculture and food security</li>
+<li>Biodiversity conservation and ecosystem protection</li>
+<li>Green financing and investment mechanisms</li>
+</ul>
+</div>
+<div class="pillar-card">
+<h3>💻 Digital Economy</h3>
+<p><strong>Focus Areas:</strong></p>
+<ul>
+<li>Digital infrastructure development</li>
+<li>Shared AI governance frameworks</li>
+<li>Technology transfer programmes</li>
+<li>Digital skills and capacity building</li>
+<li>Cybersecurity cooperation</li>
+</ul>
+</div>
+<div class="pillar-card">
+<h3>🔬 Health Systems</h3>
+<p><strong>Focus Areas:</strong></p>
+<ul>
+<li>Strengthening African pharmaceutical sovereignty</li>
+<li>Research collaboration and knowledge sharing</li>
+<li>Pandemic preparedness and response</li>
+<li>Health system strengthening</li>
+<li>Medical technology transfer</li>
+</ul>
+</div>
+<div class="pillar-card">
+<h3>⚖️ Peace &amp; Governance</h3>
+<p><strong>Focus Areas:</strong></p>
+<ul>
+<li>Supporting democratic institutions</li>
+<li>Peace operations and conflict prevention</li>
+<li>Rule of law strengthening</li>
+<li>Human rights protection</li>
+<li>Good governance initiatives</li>
+</ul>
+</div>
+<div class="pillar-card">
+<h3>🚢 Trade &amp; Investment</h3>
+<p><strong>Focus Areas:</strong></p>
+<ul>
+<li>Deepening market integration</li>
+<li>Supporting the African Continental Free Trade Area (AfCFTA)</li>
+<li>Creating fair conditions for bilateral trade</li>
+<li>Investment promotion and protection</li>
+<li>Value chain development</li>
+</ul>
+</div>
+<div class="pillar-card">
+<h3>🎓 Education &amp; Mobility</h3>
+<p><strong>Focus Areas:</strong></p>
+<ul>
+<li>Expanding Erasmus+ programmes</li>
+<li>Youth exchange initiatives</li>
+<li>Creating legal pathways for skills mobility</li>
+<li>Higher education cooperation</li>
+<li>Vocational training partnerships</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section">
+<h2>Historical Timeline</h2>
+<div class="timeline">
+<div class="timeline-item">
+<h4>1957-1975: Early Foundations</h4>
+<p>Initial cooperation through the Yaoundé Conventions and Lomé Conventions, establishing trade and development partnerships between European countries and African states.</p>
+</div>
+<div class="timeline-item">
+<h4>2000: Cotonou Agreement</h4>
+<p>The Cotonou Partnership Agreement established a comprehensive framework for cooperation between the EU and African, Caribbean, and Pacific (ACP) countries.</p>
+</div>
+<div class="timeline-item">
+<h4>2007: First EU-Africa Summit</h4>
+<p>The inaugural EU-Africa Summit in Lisbon marked the beginning of formal EU-AU institutional dialogue and strategic partnership.</p>
+</div>
+<div class="timeline-item">
+<h4>2010: Second EU-Africa Summit</h4>
+<p>Held in Tripoli, this summit focused on investment, economic growth, and integration, strengthening the partnership framework.</p>
+</div>
+<div class="timeline-item">
+<h4>2014: Fourth EU-Africa Summit</h4>
+<p>The Brussels summit emphasized peace, security, and sustainable development, establishing new cooperation mechanisms.</p>
+</div>
+<div class="timeline-item">
+<h4>2017: Fifth EU-Africa Summit</h4>
+<p>The Abidjan summit focused on youth, mobility, and investment, launching new initiatives for economic partnership.</p>
+</div>
+<div class="timeline-item">
+<h4>2022: Sixth EU-AU Summit</h4>
+<p>The Brussels summit established the current six-pillar framework and committed to a renewed partnership for the 21st century.</p>
+</div>
+<div class="timeline-item">
+<h4>2022-Present: Global Gateway Launch</h4>
+<p>Launch of the €150 billion Global Gateway Africa-Europe Investment Package, representing the largest investment commitment in EU-Africa relations.</p>
+</div>
+<div class="timeline-item">
+<h4>2023-Present: Implementation Phase</h4>
+<p>Ongoing implementation of the six-pillar framework and Global Gateway initiatives with regular monitoring and evaluation.</p>
+</div>
+</div>
+</div>
+<div class="section">
+<h2>Current Initiatives</h2>
+<ul>
+<li><strong>Global Gateway Africa:</strong> EU's €150 billion investment strategy for sustainable infrastructure development</li>
+<li><strong>Team Europe Initiatives:</strong> Coordinated EU member state and institution responses to African development priorities</li>
+<li><strong>AU-EU Innovation Agenda:</strong> Joint research and innovation programmes focusing on African priorities</li>
+<li><strong>Digital for Development (D4D) Hub:</strong> Supporting Africa's digital transformation through technology transfer</li>
+<li><strong>African Peace Facility:</strong> EU funding for AU-led peace support operations</li>
+<li><strong>Pan-African Programme:</strong> Supporting continental integration and AU institutional capacity</li>
+</ul>
+</div>
+<div class="section">
+<h2>Future Outlook</h2>
+<p>The EU-AU partnership continues to evolve, with focus areas including:</p>
+<ul>
+<li>Enhanced cooperation on global governance and multilateralism</li>
+<li>Deepened economic integration through trade and investment</li>
+<li>Joint responses to climate change and environmental challenges</li>
+<li>Collaborative approaches to migration and mobility</li>
+<li>Shared leadership on international peace and security</li>
+<li>Innovation partnerships in technology and digital transformation</li>
+<li>Implementation of the Global Gateway investment package</li>
+</ul>
+</div>
+</div>
+</main>
+</body>
+</html>
