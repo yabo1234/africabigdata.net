@@ -2,7 +2,7 @@
 
 ## 🌍 Overview
 
-This is a comprehensive educational resource documenting the relationship between the European Union and the African Union, featuring detailed coverage of Global Gateway initiatives, bilateral partnerships, and transformative investments shaping both continents.
+This is a comprehensive educational resource documenting the relationship between the European Union and the African Union, featuring detailed coverage of Global Gateway initiatives, bilateral partnerships, AI governance resources, and institutional frameworks.
 
 ## 📁 Website Structure
 
@@ -120,10 +120,10 @@ This is a comprehensive educational resource documenting the relationship betwee
 ## 📞 Support & Contact
 
 ### Editorial Team
-- **General inquiries**: editorial@africanbigdata.et
-- **Content corrections**: corrections@africanbigdata.et
-- **Partnership opportunities**: partnerships@africanbigdata.et
-- **Technical issues**: support@africanbigdata.et
+- **General inquiries**: ameburka@outlook.ie
+- **Content corrections**: ameburka@outlook.ie
+- **Partnership opportunities**: ameburka@outlook.ie
+- **Technical issues**: ameburka@outlook.ie
 
 ### Contributing
 We welcome contributions from:
